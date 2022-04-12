@@ -1,6 +1,7 @@
 import React, {useState, useEffect} from 'react';
 import './App.css';
 import Card from './components/card';
+import Search from './components/Search';
 //26695772-c5c3ba0a2e482cf8b1c58a52b
 
 function App() {
@@ -16,7 +17,7 @@ function App() {
     }
     useEffect(() => {
       fetchImages();
-  }, []);
+  }, [term]);
 
 
     const onSubmit = (e) => {
@@ -31,8 +32,15 @@ function App() {
 
   return (
     <div className="3xl  mx-auto  ">
+    <Search  searchText={(text) => setTerm(text)}  />
+
+   {
+     !isLoading && images.length === 0 &&  
+        <h1 className='text-6xl text-center text-blue-500 mx-auto  mt-32' >Dude What are You Searching? 😜</h1>
+   }
+
       {
-        isLoading ? <h1 className="text-6xl text-center text-gray-600 mx-auto mt-32">Loading...</h1> :
+        isLoading ? <h1 className="text-5xl text-center text-gray-600 mx-auto  mt-28">Loading...</h1> :
         
         <div className="grid grid-cols-3 gap-3 place-items-center">
       {
