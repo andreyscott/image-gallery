@@ -4,13 +4,15 @@ export default function Card({ image }) {
 
   return (
       //add a onhover style to the card to make it look like a hover effect
-    <div className='max-w-screen-md max-h-fit rounded-lg overflow-hidden shadow-xl  transition ease-in-out delay-150 bg-slate-200 hover:-translate-y-1 hover:scale-105 hover:bg-gray-400 duration-300 '>
+    <div className='max-w-screen-sm  max-h-fit rounded-lg overflow-hidden shadow-xl  transition ease-in-out delay-150 bg-slate-200 hover:-translate-y-1 hover:scale-105 hover:bg-gray-400 duration-300 '>
         <img 
         className='w-full rounded-lg'
          src={image.webformatURL} alt=""/>
         <div className='px-6 py-4'>
-        <div className='px-6 py-4 flex   justify-between'> 
-        <div>Image  by: {image.user}</div>
+        <div className=' py-4 flex   justify-between'> 
+        <div> <strong className='px-1'>
+        User:
+        </strong>{image.user}</div>
    {
        image.userImageURL && <img className='rounded-full  w-10 mr-2' src={image.userImageURL} alt=""/>
     

@@ -42,7 +42,7 @@ function App() {
       {
         isLoading ? <h1 className="text-5xl text-center text-gray-600 mx-auto  mt-28">Loading...</h1> :
         
-        <div className="grid grid-cols-3 gap-3 place-items-center">
+        <div className="flex flex-col  sm:grid sm:grid-cols-3 sm:gap-3 place-items-center">
       {
         images.map(image => {
           console.log(image)
