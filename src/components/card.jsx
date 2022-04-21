@@ -1,16 +1,16 @@
-import React from 'react'
+ import React from 'react'
 
 export default function Card({ image }) {
 
   return (
       //add a onhover style to the card to make it look like a hover effect
-    <div className='max-w-screen-sm  max-h-fit rounded-lg overflow-hidden shadow-xl  transition ease-in-out delay-150 bg-slate-200 hover:-translate-y-1 hover:scale-105 hover:bg-gray-400 duration-300 '>
+    <div className='max-w-screen-sm  w-96 m-2 max-h-fit rounded-lg overflow-hidden shadow-xl  transition ease-in-out delay-150 bg-slate-200 hover:-translate-y-1 hover:scale-105 hover:bg-gray-400 duration-300 '>
         <img 
         className='w-full rounded-lg'
          src={image.webformatURL} alt=""/>
         <div className='px-6 py-4'>
         <div className=' py-4 flex   justify-between'> 
-        <div> <strong className='px-1'>
+        <div> <strong className='p-1'>
         User:
         </strong>{image.user}</div>
    {
