@@ -42,8 +42,8 @@ function App() {
       {
         isLoading ? <h1 className="text-5xl text-center text-gray-600 mx-auto  mt-28">Loading...</h1> :
         
-        <div className="grid grid-cols-3 md:gap-3 place-items-center">
-      {
+        <div className="flex flex-col md:grid md:grid-cols-2 lg:grid-cols-3  md:gap-3 lg:gap-4 place-items-center">
+    {
         images.map(image => {
           console.log(image)
           return <Card image={image} key={image.id} />
