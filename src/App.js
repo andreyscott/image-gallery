@@ -31,7 +31,7 @@ function App() {
   }
 
   return (
-    <div className="3xl overflow-hidden px-4 ">
+    <div className="3xl overflow-hidden px-2 ">
     <Search  searchText={(text) => setTerm(text)}  />
 
    {
@@ -42,7 +42,7 @@ function App() {
       {
         isLoading ? <h1 className="text-5xl text-center text-gray-600 mx-auto  mt-28">Loading...</h1> :
         
-        <div className="flex flex-col md:grid md:grid-cols-2 lg:grid-cols-3 space-y-4 mx-2 px-2 md:gap-3 shadow-xl lg:gap-4 place-items-center">
+        <div className="flex flex-col space-y-3 mx-2  md:grid md:grid-cols-2 lg:grid-cols-3 md:space-y-4  md:gap-3 lg:gap-4 place-items-center">
     {
         images.map(image => {
           console.log(image)
