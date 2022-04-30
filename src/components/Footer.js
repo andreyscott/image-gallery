@@ -36,7 +36,7 @@ export default function Footer() {
             aria-label="Twitter"
           >
             <svg
-              className="w-8 h-8 hover:animate-pulse"
+              className="w-8 h-8"
               fill="currentColor"
               viewBox="0 0 24 24"
               aria-hidden="true"
