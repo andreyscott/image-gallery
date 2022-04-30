@@ -1,6 +1,7 @@
 import React, {useState, useEffect} from 'react';
 import './App.css';
 import Card from './components/card';
+import Footer from './components/Footer';
 import Search from './components/Search';
 //26695772-c5c3ba0a2e482cf8b1c58a52b
 
@@ -52,7 +53,7 @@ function App() {
       }
       </div>
         }
-    
+    <Footer />
     </div>
   );
 }
