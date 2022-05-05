@@ -18,18 +18,14 @@ function App() {
     }
     useEffect(() => {
       fetchImages();
-  }, [term]);
+  }, );
 
 
-    const onSubmit = (e) => {
-      e.preventDefault();
-      setIsLoading(true);
-      fetchImages();
-  }
+  
 
-  const onChange = (e) => {
-      setTerm(e.target.value);
-  }
+  // const onChange = (e) => {
+  //     setTerm(e.target.value);
+  // }
 
   return (
     <div className="3xl overflow-hidden px-2 ">
@@ -47,13 +43,14 @@ function App() {
     {
         images.map(image => {
           console.log(image)
-          return <Card image={image} key={image.id} />
+          return   <Card image={image} key={image.id} /> 
         }
         )
       }
       </div>
+      
         }
-    <Footer />
+        <Footer />  
     </div>
   );
 }
